@@ -37,6 +37,15 @@ $bp-d: (
 
 /*
 ===============
+Flag
+===============
+*/
+
+i.flag:before{display:inline-block;width:16px;height:11px;content:"";background:url(https://mdbootstrap.com/img/svg/flags.png) no-repeat -108px -1976px}
+i.flag-ae:before,i.flag-uae:before,i.flag-united-arab-emirates:before{background-position:0 -26px!important}
+
+/*
+===============
 Fonts
 ===============
 */
@@ -319,7 +328,7 @@ Intro
   padding: 0.75rem 1.5rem;
   border: 1px solid var(--clr-grey-8);
   color: var(--clr-grey-4);
-  transition: varvar(--transition);
+  transition: var(--transition);
 
   &:hover {
     border-color: var(--clr-grey-4);
@@ -328,6 +337,18 @@ Intro
 
 .intro__email i {
   font-size: 1.65rem;
+}
+
+.intro__with-flag {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  margin: auto;
+
+  img {
+    width: 25px;
+    height: 10px;
+  }
 }
 
 .socials {
@@ -347,7 +368,7 @@ Intro
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    column-gap: 2rem;
+    column-gap: 1rem;
     background-color: var(--clr-white);
     padding: 1.25rem 0;
     border-radius: 0.25rem;
